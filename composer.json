@@ -10,8 +10,8 @@
     "doctrine/doctrine-bundle": "1.*",
     "doctrine/data-fixtures": "1.*",
     "nelmio/alice": "2.*",
-    "symfony/phpunit-bridge": "3.2.*",
-    "phpunit/phpunit": "5.7.*"
+    "symfony/phpunit-bridge": "*",
+    "phpunit/phpunit": "*"
   },
   "require-dev": {
     "johnkary/phpunit-speedtrap": "1.0.*",
