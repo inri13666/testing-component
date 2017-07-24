@@ -44,6 +44,7 @@ abstract class WebTestCase extends BaseWebTestCase
     public static function afterClass()
     {
         self::rollbackTransaction();
+        self::resetClient();
     }
 
     /**
@@ -51,6 +52,10 @@ abstract class WebTestCase extends BaseWebTestCase
      */
     protected static function resetClient()
     {
+        if (self::$clientInstance) {
+            self::$clientInstance = null;
+        }
+        
         static::ensureKernelShutdown();
     }
 
